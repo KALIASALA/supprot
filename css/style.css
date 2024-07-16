@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+button{
+    background: unset;
+    border: none;
+}
+.head{
+    background-image: url('../img/OIP.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.h1{
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    padding-top: 20%;
+}
+.h1 img{
+    width: 100px;
+}
+.buttons{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+}
+.send_me_div{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header_slide{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.header_slide img{
+    width: 100%;
+    height: 70vh;
+}
+.send_me{
+    width: 45%;
+    border-radius: 50px;
+   background: #000;
+   border: none;
+  outline: none;
+    color: #ffffff;
+    padding: 25px 30px;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.send_me img{
+    width: 25px;
+    max-width: 300px;
+}
+.sender {
+    padding: 50px;
+    position: fixed; /* Adjusted to fixed position for overlay effect */
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    max-height: 900px;
+    background: #ffffff;
+    border-radius: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.sender.d-block {
+    opacity: 1;
+    visibility: visible;
+}
+
+.qr-code{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.qr-code svg{
+    width: 100%;
+    height: auto;
+}
+
+.crypto_wallet_txt {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0%;
+
+    word-wrap: break-word;
+}
+.memo{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 90%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.info_h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.p1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copy_btn {
+    width: 100%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+}
+
+.crypto_wallet_net {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.close_btn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+}
+
+.close_btn:hover {
+    color: #000;
+}
+.d-none{
+    display: none;
+}
