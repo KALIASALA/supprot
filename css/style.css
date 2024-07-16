@@ -101,7 +101,7 @@ button {
 .sender {
     padding: 50px;
     position: fixed;
-    width: 70%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
